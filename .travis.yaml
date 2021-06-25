@@ -1,0 +1,9 @@
+language: generic
+jobs:
+  fast_finish: true
+  include:
+    - stage: Debug
+      name: Debug
+      script:
+        - echo $TRAVIS_COMMIT_RANGE
+        - env | sort
